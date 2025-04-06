@@ -3,8 +3,8 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
 
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    const username = document.getElementById("login-email").value;
+    const password = document.getElementById("login-password").value;
 
     // Get or create alert container
     let alertContainer = document.getElementById("alert-container");
@@ -23,7 +23,7 @@ document
       return;
     }
 
-    if (username === "admin" && password === "admin") {
+    if (username === "user@example.com" && password === "Test@1234") {
       showAlert("✅ Login Successful!", "alert-success");
       setTimeout(() => {
         window.location.href = "main.html"; // Redirect to main page after 1.5 seconds
