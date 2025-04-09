@@ -45,7 +45,6 @@ function showAlert(message, type) {
 
   alertContainer.appendChild(alertDiv);
 
-  // Remove the alert after 3 seconds
   setTimeout(() => {
     alertDiv.remove();
   }, 3000);
